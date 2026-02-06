@@ -1,0 +1,17 @@
+// ================= Test Cases =================
+
+// Positive test cases
+library.addBook(b1);                 // Add first book
+library.addBook(b2);                 // Add second book
+
+library.searchBook("C++ Basics");    // Search existing book
+library.borrowBook(1);               // Borrow available book
+library.returnBook(1);               // Return borrowed book
+library.removeBook(2);               // Remove existing book
+
+// Negative test cases
+library.searchBook("Java Programming"); // Search non-existing book
+library.borrowBook(1);                  // Borrow already borrowed book
+library.borrowBook(3);                  // Borrow non-existing book
+library.removeBook(5);                  // Remove non-existing book
+library.returnBook(2);                  // Return a book not borrowed
